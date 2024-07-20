@@ -2,14 +2,23 @@ Amazon Data Model and Schema
 This repository contains the data model and schema design for Amazon, showcasing how the platform manages its complex e-commerce functionalities. The schema includes entities such as Users, Products, Orders, Reviews, Sellers, and more, reflecting the intricate interactions and relationships that drive Amazon's robust platform.
 
 Table of Contents
+
 Introduction
+
 Entities and Attributes
+
 Entity-Relationship Diagram
+
 Schema Definition
+
 Usage
+
 Contributing
+
 License
+
 Introduction
+
 Amazon, founded in 1994 by Jeff Bezos, has transformed the e-commerce industry by offering a vast array of products and services to a global customer base. This repository presents the data model and schema for Amazon, illustrating how the platform manages users, products, orders, reviews, sellers, and payments to provide a seamless shopping experience.
 
 Entities and Attributes
