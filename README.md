@@ -23,16 +23,19 @@ Amazon, founded in 1994 by Jeff Bezos, has transformed the e-commerce industry b
 
 Entities and Attributes
 User Entity
+
 UserID (Primary Key): A unique identifier for each user.
 Username: The chosen username for the user's account.
 Email: The user's email address for account-related communication.
 Full_Name: The user's full name as provided during registration.
 Registration_Date: The date when the user joined Amazon.
+
 Seller Entity
 SellerID (Primary Key): A unique identifier for each seller.
 Name: The name of the seller or seller company.
 Seller_Location: The location or address of the seller.
 Seller_Join_Date: The date when the seller joined Amazon as a seller.
+
 Product Entity
 ProductID (Primary Key): A unique identifier for each product.
 SellerID (Foreign Key): The seller offering the product.
@@ -40,6 +43,7 @@ Name: The title or name of the product.
 Description: A brief description providing details about the product.
 Price: The price of the product.
 Category: The category or type of product (e.g., electronics, books, clothing).
+
 Order Entity
 OrderID (Primary Key): A unique identifier for each order.
 UserID (Foreign Key): The user who placed the order.
@@ -47,20 +51,26 @@ ProductID (Foreign Key): The product purchased in the order.
 Order_Date: The date when the order was placed.
 Total_Amount: The total amount paid for the order.
 Order_Status: The status of the order (e.g., pending, shipped, delivered).
+
 Review Entity
+
 ReviewID (Primary Key): A unique identifier for each review.
 UserID (Foreign Key): The user who posted the review.
 ProductID (Foreign Key): The product being reviewed.
 Rating: The rating or score given by the user for the product.
 Comment: The text of the review providing additional details and insights.
 Review_Date: The date when the review was posted.
+
 Payment Entity
+
 PaymentID (Primary Key): A unique identifier for each payment.
 OrderID (Foreign Key): The order associated with the payment.
 Payment_Method: The method used for payment (e.g., credit card, PayPal).
 Payment_Amount: The amount paid.
 Payment_Date: The date when the payment was made.
+
 Cart Entity
+
 CartID (Primary Key): A unique identifier for each cart.
 UserID (Foreign Key): The user who owns the cart.
 Created_Date: The date when the cart was created.
@@ -68,6 +78,7 @@ Entity-Relationship Diagram
 The ER diagram illustrates the relationships and attributes of the entities within the Amazon schema. This visual representation provides insights into the fundamental components of Amazon's data model, highlighting the intricate interactions and connections that drive the platform's functionality.
 
 Schema Definition
+
 The schema definitions for each entity are provided below:-- User Entity
 CREATE TABLE Users (
     UserID SERIAL PRIMARY KEY,
